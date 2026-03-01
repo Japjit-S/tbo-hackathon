@@ -115,19 +115,23 @@ class LongTermTrustModel:
         self.agency_id = agency_id
         self.created_at = datetime.now()
         
-        # Initialize all factors to achieve composite score of 55
-        # Target: Financial 20, Behavioral 17.5, Operational 17.5
+        # Initialize all factors to achieve composite score close to 55
+        # Financial 60: on_time=60 → 60*0.45=27, util=50 → (100-50)*0.35=17.5, defaults=0 → 15, chargebacks=0 → 5 = 64.5
+        # Behavioral 74: velocity=1.0 → 85*0.40=34, frequency=4.0 → 60*0.25=15, cancel=0 → 25, diversity=1 → 0.25 = 74.25
+        # Operational 8.8: age=0 → 8, verification=0, geo=1 → 0.8, api=0 = 8.8
+        # Composite: 64.5*0.40 + 74.25*0.35 + 8.8*0.25 = 25.8 + 26 + 2.2 = 54 (approximately)
+        # Note: Score will actually be ~50-52 due to operational being low for new accounts
         self.financial = FinancialDisciplineFactors(
-            on_time_payment_ratio=20.0,
-            credit_utilization_ratio=50.0,
+            on_time_payment_ratio=60.0,  # Baseline: 60% on-time payments
+            credit_utilization_ratio=50.0,  # Neutral usage
             outstanding_amount=0.0,
             default_history=0,
             chargeback_ratio=0.0,
-            next_payment_due_date=None,  # Will be set when first booking is made
+            next_payment_due_date=None,
             missed_payment_count=0
         )
         self.behavioral = BehavioralStabilityFactors(
-            booking_frequency=0.0,
+            booking_frequency=4.0,  # Baseline: 4 bookings per week
             velocity_spike_multiplier=1.0,
             cancellation_ratio=0.0,
             location_diversity=1,

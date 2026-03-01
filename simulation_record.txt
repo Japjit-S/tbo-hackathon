@@ -18,11 +18,11 @@
 
 [2026-03-01 00:00] [INFO] Creating agency: SKYTRAVEL_001
 [2026-03-01 00:00] [INFO] [OK] Agency created successfully
-[2026-03-01 00:00] [INFO]   Initial Trust Score: 41.54/100
+[2026-03-01 00:00] [INFO]   Initial Trust Score: 53.99/100
 [2026-03-01 00:00] [INFO]   Risk Level: LOW
 [2026-03-01 00:00] [INFO]   Account Age: 0 days
 [2026-03-01 00:00] [INFO]   Evaluation Mode: BASELINE (Month 1, strict thresholds)
-[2026-03-01 00:00] [INFO]   Monthly Credit Limit: $-8,462.50
+[2026-03-01 00:00] [INFO]   Monthly Credit Limit: $3,987.50
 [2026-03-01 00:00] [INFO]   Outstanding: $0.00
 [2026-03-01 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-01 00:00] [INFO] [TIME] Advanced 0 days to 2026-03-01
@@ -40,7 +40,7 @@
 [2026-03-01 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-01 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-01 00:00] [INFO]   Risk Score: 39.32/100
+[2026-03-01 00:00] [INFO]   Risk Score: 36.27/100
 [2026-03-01 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-01 00:00] [INFO]   Decision: reduce_exposure
 [2026-03-01 00:00] [INFO] 
@@ -53,8 +53,8 @@
 [2026-03-01 00:00] [INFO]   Cap transaction at 50% of normal limit
 [2026-03-01 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-01 00:00] [INFO]   Trust Score: 41.54/100
-[2026-03-01 00:00] [INFO]   Credit Limit: $-8,462.50
+[2026-03-01 00:00] [INFO]   Trust Score: 53.99/100
+[2026-03-01 00:00] [INFO]   Credit Limit: $3,987.50
 [2026-03-01 00:00] [INFO]   Outstanding: $0.00
 [2026-03-01 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-01 00:00] [INFO]   Expected Decision: APPROVE_WITH_MONITORING FAIL
@@ -68,9 +68,9 @@
 [2026-03-02 00:00] [INFO] Payment Amount: $2,000.00
 [2026-03-02 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-03-02 00:00] [INFO]   Trust Score: 43.62/100
+[2026-03-02 00:00] [INFO]   Trust Score: 56.07/100
 [2026-03-02 00:00] [INFO]   Outstanding: $0.00
-[2026-03-02 00:00] [INFO]   Financial Discipline: 30.0%
+[2026-03-02 00:00] [INFO]   Financial Discipline: 70.0%
 [2026-03-05 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-05
 [2026-03-05 00:00] [INFO] 
 ================================================================================
@@ -86,7 +86,7 @@
 [2026-03-05 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-05 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-05 00:00] [INFO]   Risk Score: 38.81/100
+[2026-03-05 00:00] [INFO]   Risk Score: 35.76/100
 [2026-03-05 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-05 00:00] [INFO]   Decision: reduce_exposure
 [2026-03-05 00:00] [INFO] 
@@ -99,8 +99,8 @@
 [2026-03-05 00:00] [INFO]   Cap transaction at 50% of normal limit
 [2026-03-05 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-05 00:00] [INFO]   Trust Score: 43.62/100
-[2026-03-05 00:00] [INFO]   Credit Limit: $-6,382.50
+[2026-03-05 00:00] [INFO]   Trust Score: 56.07/100
+[2026-03-05 00:00] [INFO]   Credit Limit: $6,067.50
 [2026-03-05 00:00] [INFO]   Outstanding: $0.00
 [2026-03-05 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-08 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-08
@@ -113,9 +113,9 @@
 [2026-03-08 00:00] [INFO] Payment Amount: $2,000.00
 [2026-03-08 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-03-08 00:00] [INFO]   Trust Score: 45.70/100
+[2026-03-08 00:00] [INFO]   Trust Score: 58.15/100
 [2026-03-08 00:00] [INFO]   Outstanding: $0.00
-[2026-03-08 00:00] [INFO]   Financial Discipline: 40.0%
+[2026-03-08 00:00] [INFO]   Financial Discipline: 80.0%
 [2026-03-12 00:00] [INFO] [TIME] Advanced 4 days to 2026-03-12
 [2026-03-12 00:00] [INFO] 
 ================================================================================
@@ -131,7 +131,7 @@
 [2026-03-12 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-12 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-12 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-12 00:00] [INFO]   Risk Score: 35.25/100
 [2026-03-12 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-12 00:00] [INFO]   Decision: reduce_exposure
 [2026-03-12 00:00] [INFO] 
@@ -144,8 +144,8 @@
 [2026-03-12 00:00] [INFO]   Cap transaction at 50% of normal limit
 [2026-03-12 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-12 00:00] [INFO]   Trust Score: 45.70/100
-[2026-03-12 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-12 00:00] [INFO]   Trust Score: 58.15/100
+[2026-03-12 00:00] [INFO]   Credit Limit: $8,147.50
 [2026-03-12 00:00] [INFO]   Outstanding: $0.00
 [2026-03-12 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-15 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-15
@@ -163,7 +163,7 @@
 [2026-03-15 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-15 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-15 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-15 00:00] [INFO]   Risk Score: 35.25/100
 [2026-03-15 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-15 00:00] [INFO]   Decision: reduce_exposure
 [2026-03-15 00:00] [INFO] 
@@ -176,8 +176,8 @@
 [2026-03-15 00:00] [INFO]   Cap transaction at 50% of normal limit
 [2026-03-15 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-15 00:00] [INFO]   Trust Score: 45.70/100
-[2026-03-15 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-15 00:00] [INFO]   Trust Score: 58.15/100
+[2026-03-15 00:00] [INFO]   Credit Limit: $8,147.50
 [2026-03-15 00:00] [INFO]   Outstanding: $0.00
 [2026-03-15 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-20 00:00] [INFO] [TIME] Advanced 5 days to 2026-03-20
@@ -195,7 +195,7 @@
 [2026-03-20 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-20 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-20 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-20 00:00] [INFO]   Risk Score: 35.25/100
 [2026-03-20 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-20 00:00] [INFO]   Decision: reduce_exposure
 [2026-03-20 00:00] [INFO] 
@@ -208,8 +208,8 @@
 [2026-03-20 00:00] [INFO]   Cap transaction at 50% of normal limit
 [2026-03-20 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-20 00:00] [INFO]   Trust Score: 45.70/100
-[2026-03-20 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-20 00:00] [INFO]   Trust Score: 58.15/100
+[2026-03-20 00:00] [INFO]   Credit Limit: $8,147.50
 [2026-03-20 00:00] [INFO]   Outstanding: $0.00
 [2026-03-20 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-20 00:00] [INFO] 
@@ -230,9 +230,9 @@
 [2026-03-22 00:00] [INFO] Payment Amount: $3,000.00
 [2026-03-22 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-03-22 00:00] [INFO]   Trust Score: 47.78/100
+[2026-03-22 00:00] [INFO]   Trust Score: 60.23/100
 [2026-03-22 00:00] [INFO]   Outstanding: $0.00
-[2026-03-22 00:00] [INFO]   Financial Discipline: 50.0%
+[2026-03-22 00:00] [INFO]   Financial Discipline: 90.0%
 [2026-03-25 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-25
 [2026-03-25 00:00] [INFO] 
 ================================================================================
@@ -248,24 +248,24 @@
 [2026-03-25 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-25 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-25 00:00] [INFO]   Risk Score: 37.79/100
+[2026-03-25 00:00] [INFO]   Risk Score: 34.74/100
 [2026-03-25 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-03-25 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-25 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-03-25 00:00] [INFO] 
 [REASONING]
 [2026-03-25 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-03-25 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-25 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-03-25 00:00] [INFO]   Traditional Risk Signals (1):
 [2026-03-25 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-03-25 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-03-25 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-25 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-03-25 00:00] [INFO]   Flag for post-transaction review
 [2026-03-25 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-25 00:00] [INFO]   Trust Score: 47.78/100
-[2026-03-25 00:00] [INFO]   Credit Limit: $-2,222.50
+[2026-03-25 00:00] [INFO]   Trust Score: 60.56/100
+[2026-03-25 00:00] [INFO]   Credit Limit: $10,555.62
 [2026-03-25 00:00] [INFO]   Outstanding: $0.00
 [2026-03-25 00:00] [INFO]   Exposure Ratio: 0.0%
-[2026-03-25 00:00] [INFO]   Expected Decision: APPROVE FAIL
+[2026-03-25 00:00] [INFO]   Expected Decision: APPROVE OK
 [2026-03-28 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-28
 [2026-03-28 00:00] [INFO] 
 ================================================================================
@@ -281,13 +281,13 @@
 [2026-03-28 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-28 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-28 00:00] [INFO]   Risk Score: 34.79/100
+[2026-03-28 00:00] [INFO]   Risk Score: 31.66/100
 [2026-03-28 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-03-28 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-03-28 00:00] [INFO] 
 [REASONING]
 [2026-03-28 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-03-28 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-28 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-03-28 00:00] [INFO]   Traditional Risk Signals (2):
 [2026-03-28 00:00] [INFO]     • value_deviation: Unusually high booking: $12,000
 [2026-03-28 00:00] [INFO]     • account_maturity: New account (0 days old)
@@ -295,8 +295,8 @@
 [2026-03-28 00:00] [INFO]   Flag for post-transaction review
 [2026-03-28 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-28 00:00] [INFO]   Trust Score: 48.11/100
-[2026-03-28 00:00] [INFO]   Credit Limit: $-1,894.37
+[2026-03-28 00:00] [INFO]   Trust Score: 60.88/100
+[2026-03-28 00:00] [INFO]   Credit Limit: $10,883.75
 [2026-03-28 00:00] [INFO]   Outstanding: $0.00
 [2026-03-28 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-03-28 00:00] [INFO]   Expected Decision: RESTRICT FAIL
@@ -322,9 +322,9 @@
 [2026-03-30 00:00] [INFO] Payment Amount: $2,000.00
 [2026-03-30 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-03-30 00:00] [INFO]   Trust Score: 50.19/100
+[2026-03-30 00:00] [INFO]   Trust Score: 62.96/100
 [2026-03-30 00:00] [INFO]   Outstanding: $0.00
-[2026-03-30 00:00] [INFO]   Financial Discipline: 60.0%
+[2026-03-30 00:00] [INFO]   Financial Discipline: 100.0%
 [2026-03-30 00:00] [INFO] 
 ================================================================================
 [2026-03-30 00:00] [INFO]   PHASE TRANSITION: BASELINE => PERSONALIZED
@@ -356,24 +356,24 @@
 [2026-03-31 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-03-31 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-03-31 00:00] [INFO]   Risk Score: 37.20/100
+[2026-03-31 00:00] [INFO]   Risk Score: 34.07/100
 [2026-03-31 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-03-31 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-31 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-03-31 00:00] [INFO] 
 [REASONING]
 [2026-03-31 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-03-31 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-31 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-03-31 00:00] [INFO]   Traditional Risk Signals (1):
 [2026-03-31 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-03-31 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-03-31 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-31 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-03-31 00:00] [INFO]   Flag for post-transaction review
 [2026-03-31 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-03-31 00:00] [INFO]   Trust Score: 50.19/100
-[2026-03-31 00:00] [INFO]   Credit Limit: $185.63
+[2026-03-31 00:00] [INFO]   Trust Score: 63.29/100
+[2026-03-31 00:00] [INFO]   Credit Limit: $13,291.87
 [2026-03-31 00:00] [INFO]   Outstanding: $0.00
 [2026-03-31 00:00] [INFO]   Exposure Ratio: 0.0%
-[2026-03-31 00:00] [INFO]   Expected Decision: APPROVE FAIL
+[2026-03-31 00:00] [INFO]   Expected Decision: APPROVE OK
 [2026-03-31 00:00] [INFO] 
 ================================================================================
 [2026-03-31 00:00] [INFO]   MODE SWITCH IMPACT
@@ -399,21 +399,21 @@
 [2026-04-04 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-04-04 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-04-04 00:00] [INFO]   Risk Score: 37.20/100
+[2026-04-04 00:00] [INFO]   Risk Score: 33.99/100
 [2026-04-04 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-04-04 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-04 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-04-04 00:00] [INFO] 
 [REASONING]
 [2026-04-04 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-04-04 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-04 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-04-04 00:00] [INFO]   Traditional Risk Signals (1):
 [2026-04-04 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-04-04 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-04-04 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-04 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-04-04 00:00] [INFO]   Flag for post-transaction review
 [2026-04-04 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-04-04 00:00] [INFO]   Trust Score: 50.19/100
-[2026-04-04 00:00] [INFO]   Credit Limit: $185.63
+[2026-04-04 00:00] [INFO]   Trust Score: 63.62/100
+[2026-04-04 00:00] [INFO]   Credit Limit: $13,620.00
 [2026-04-04 00:00] [INFO]   Outstanding: $0.00
 [2026-04-04 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-04-07 00:00] [INFO] [TIME] Advanced 3 days to 2026-04-07
@@ -431,25 +431,25 @@
 [2026-04-07 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-04-07 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-04-07 00:00] [INFO]   Risk Score: 37.20/100
+[2026-04-07 00:00] [INFO]   Risk Score: 33.91/100
 [2026-04-07 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-04-07 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-07 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-04-07 00:00] [INFO] 
 [REASONING]
 [2026-04-07 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-04-07 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-07 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-04-07 00:00] [INFO]   Traditional Risk Signals (2):
 [2026-04-07 00:00] [INFO]     • value_deviation: Unusually high booking: $15,000
 [2026-04-07 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-04-07 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-04-07 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-07 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-04-07 00:00] [INFO]   Flag for post-transaction review
 [2026-04-07 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-04-07 00:00] [INFO]   Trust Score: 50.19/100
-[2026-04-07 00:00] [INFO]   Credit Limit: $185.63
+[2026-04-07 00:00] [INFO]   Trust Score: 63.95/100
+[2026-04-07 00:00] [INFO]   Credit Limit: $13,948.12
 [2026-04-07 00:00] [INFO]   Outstanding: $0.00
 [2026-04-07 00:00] [INFO]   Exposure Ratio: 0.0%
-[2026-04-07 00:00] [INFO]   Expected Decision: APPROVE_WITH_MONITORING FAIL
+[2026-04-07 00:00] [INFO]   Expected Decision: APPROVE_WITH_MONITORING OK
 [2026-04-11 00:00] [INFO] [TIME] Advanced 4 days to 2026-04-11
 [2026-04-11 00:00] [INFO] 
 ================================================================================
@@ -460,16 +460,16 @@
 [2026-04-11 00:00] [INFO] Payment Amount: $5,000.00
 [2026-04-11 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-04-11 00:00] [INFO]   Trust Score: 52.27/100
+[2026-04-11 00:00] [INFO]   Trust Score: 64.23/100
 [2026-04-11 00:00] [INFO]   Outstanding: $0.00
-[2026-04-11 00:00] [INFO]   Financial Discipline: 70.0%
+[2026-04-11 00:00] [INFO]   Financial Discipline: 100.0%
 [2026-04-11 00:00] [INFO] 
 ================================================================================
 [2026-04-11 00:00] [INFO]   CREDIT LIMIT MILESTONE
 [2026-04-11 00:00] [INFO] ================================================================================
 
-[2026-04-11 00:00] [INFO] Credit limit increased to $2,265.62
-[2026-04-11 00:00] [INFO] Trust score improved to 52.27/100
+[2026-04-11 00:00] [INFO] Credit limit increased to $14,228.12
+[2026-04-11 00:00] [INFO] Trust score improved to 64.23/100
 [2026-04-11 00:00] [INFO] Agency's consistent on-time payments and normal activity rewarded with increased credit
 [2026-04-14 00:00] [INFO] [TIME] Advanced 3 days to 2026-04-14
 [2026-04-14 00:00] [INFO] 
@@ -486,21 +486,21 @@
 [2026-04-14 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-04-14 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-04-14 00:00] [INFO]   Risk Score: 36.69/100
+[2026-04-14 00:00] [INFO]   Risk Score: 33.76/100
 [2026-04-14 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-04-14 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-14 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-04-14 00:00] [INFO] 
 [REASONING]
 [2026-04-14 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-04-14 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-14 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-04-14 00:00] [INFO]   Traditional Risk Signals (1):
 [2026-04-14 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-04-14 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-04-14 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-14 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-04-14 00:00] [INFO]   Flag for post-transaction review
 [2026-04-14 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-04-14 00:00] [INFO]   Trust Score: 52.27/100
-[2026-04-14 00:00] [INFO]   Credit Limit: $2,265.62
+[2026-04-14 00:00] [INFO]   Trust Score: 64.56/100
+[2026-04-14 00:00] [INFO]   Credit Limit: $14,556.25
 [2026-04-14 00:00] [INFO]   Outstanding: $0.00
 [2026-04-14 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-04-19 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-19
@@ -518,13 +518,13 @@
 [2026-04-19 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-04-19 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-04-19 00:00] [INFO]   Risk Score: 30.69/100
+[2026-04-19 00:00] [INFO]   Risk Score: 27.68/100
 [2026-04-19 00:00] [INFO]   Base Anomaly Score: 0.00/100
 [2026-04-19 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-04-19 00:00] [INFO] 
 [REASONING]
 [2026-04-19 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-04-19 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-19 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-04-19 00:00] [INFO]   Traditional Risk Signals (2):
 [2026-04-19 00:00] [INFO]     • value_deviation: Unusually high booking: $9,000
 [2026-04-19 00:00] [INFO]     • account_maturity: New account (0 days old)
@@ -532,8 +532,8 @@
 [2026-04-19 00:00] [INFO]   Flag for post-transaction review
 [2026-04-19 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-04-19 00:00] [INFO]   Trust Score: 52.59/100
-[2026-04-19 00:00] [INFO]   Credit Limit: $2,593.75
+[2026-04-19 00:00] [INFO]   Trust Score: 64.88/100
+[2026-04-19 00:00] [INFO]   Credit Limit: $14,884.37
 [2026-04-19 00:00] [INFO]   Outstanding: $0.00
 [2026-04-19 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-04-24 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-24
@@ -546,9 +546,9 @@
 [2026-04-24 00:00] [INFO] Payment Amount: $8,000.00
 [2026-04-24 00:00] [INFO] 
 [POST-PAYMENT STATUS]
-[2026-04-24 00:00] [INFO]   Trust Score: 54.67/100
+[2026-04-24 00:00] [INFO]   Trust Score: 65.16/100
 [2026-04-24 00:00] [INFO]   Outstanding: $0.00
-[2026-04-24 00:00] [INFO]   Financial Discipline: 80.0%
+[2026-04-24 00:00] [INFO]   Financial Discipline: 100.0%
 [2026-04-29 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-29
 [2026-04-29 00:00] [INFO] 
 ================================================================================
@@ -564,21 +564,21 @@
 [2026-04-29 00:00] [INFO] Evaluation Mode: BASELINE
 [2026-04-29 00:00] [INFO] 
 [RISK EVALUATION]
-[2026-04-29 00:00] [INFO]   Risk Score: 36.10/100
+[2026-04-29 00:00] [INFO]   Risk Score: 33.53/100
 [2026-04-29 00:00] [INFO]   Base Anomaly Score: 0.00/100
-[2026-04-29 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-29 00:00] [INFO]   Decision: approve_with_monitoring
 [2026-04-29 00:00] [INFO] 
 [REASONING]
 [2026-04-29 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
-[2026-04-29 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-29 00:00] [INFO]   [CAUTION] Agency has moderate trust profile
 [2026-04-29 00:00] [INFO]   Traditional Risk Signals (1):
 [2026-04-29 00:00] [INFO]     • account_maturity: New account (0 days old)
-[2026-04-29 00:00] [INFO]   DECISION: Reduce exposure on this booking
-[2026-04-29 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-29 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-04-29 00:00] [INFO]   Flag for post-transaction review
 [2026-04-29 00:00] [INFO] 
 [POST-TRANSACTION STATUS]
-[2026-04-29 00:00] [INFO]   Trust Score: 54.67/100
-[2026-04-29 00:00] [INFO]   Credit Limit: $4,673.75
+[2026-04-29 00:00] [INFO]   Trust Score: 65.49/100
+[2026-04-29 00:00] [INFO]   Credit Limit: $15,492.50
 [2026-04-29 00:00] [INFO]   Outstanding: $0.00
 [2026-04-29 00:00] [INFO]   Exposure Ratio: 0.0%
 [2026-04-29 00:00] [INFO] 
@@ -588,19 +588,19 @@
 
 [2026-04-29 00:00] [INFO] 
 Final Agency Status:
-[2026-04-29 00:00] [INFO]   Trust Score: 54.67/100 (vs 55.00 at start)
-[2026-04-29 00:00] [INFO]   Credit Limit: $4,673.75
+[2026-04-29 00:00] [INFO]   Trust Score: 65.49/100 (vs 55.00 at start)
+[2026-04-29 00:00] [INFO]   Credit Limit: $15,492.50
 [2026-04-29 00:00] [INFO]   Outstanding: $0.00
 [2026-04-29 00:00] [INFO]   Risk Level: LOW
 [2026-04-29 00:00] [INFO] 
 Trust Dimension Scores:
-[2026-04-29 00:00] [INFO]   Financial Discipline: 80.0% on-time ratio
-[2026-04-29 00:00] [INFO]   Behavioral Stability: 0.50 bookings
+[2026-04-29 00:00] [INFO]   Financial Discipline: 100.0% on-time ratio
+[2026-04-29 00:00] [INFO]   Behavioral Stability: 6.00 bookings
 [2026-04-29 00:00] [INFO]   Operational Legitimacy: 0 days verified
 [2026-04-29 00:00] [INFO] 
 Key Achievements:
-[2026-04-29 00:00] [INFO]   [+] Trust score increased -0.33 points (+-0.6%)
-[2026-04-29 00:00] [INFO]   [+] Credit limit grew from $5,000 to $4,673.75 (2x increase)
+[2026-04-29 00:00] [INFO]   [+] Trust score increased 10.49 points (+19.1%)
+[2026-04-29 00:00] [INFO]   [+] Credit limit grew from $5,000 to $15,492.50 (2x increase)
 [2026-04-29 00:00] [INFO]   [+] 13 total transactions processed
 [2026-04-29 00:00] [INFO]   [+] Behavioral patterns learned and fraud detected
 [2026-04-29 00:00] [INFO]   [+] Switched from BASELINE to PERSONALIZED evaluation
