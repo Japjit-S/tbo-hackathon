@@ -4,9 +4,10 @@ Models agency trust evolution across 3 dimensions over time.
 """
 
 from dataclasses import dataclass, field, asdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import List, Optional, Dict, Any
 import json
+from calendar import monthrange
 
 
 @dataclass
@@ -17,6 +18,8 @@ class FinancialDisciplineFactors:
     outstanding_amount: float = 0.0  # $ amount outstanding
     default_history: int = 0  # count of defaults
     chargeback_ratio: float = 0.0  # 0-100: % of chargebacks
+    next_payment_due_date: Optional[datetime] = None  # End of current month
+    missed_payment_count: int = 0  # count of overdue payments
 
     def to_score(self) -> float:
         """Composite score 0-100"""
@@ -119,7 +122,9 @@ class LongTermTrustModel:
             credit_utilization_ratio=50.0,
             outstanding_amount=0.0,
             default_history=0,
-            chargeback_ratio=0.0
+            chargeback_ratio=0.0,
+            next_payment_due_date=None,  # Will be set when first booking is made
+            missed_payment_count=0
         )
         self.behavioral = BehavioralStabilityFactors(
             booking_frequency=0.0,
@@ -184,6 +189,32 @@ class LongTermTrustModel:
         outstanding = self.financial.outstanding_amount or 0.0
         exposure = outstanding / monthly_limit
         return min(1.0, max(0.0, exposure))
+
+    def get_next_payment_due_date(self, current_date: Optional[datetime] = None) -> datetime:
+        """Calculate next payment due date (end of current month).
+        If no date provided, uses today."""
+        if current_date is None:
+            current_date = datetime.now()
+        
+        # Get the last day of the current month
+        _, last_day = monthrange(current_date.year, current_date.month)
+        due_date = datetime(current_date.year, current_date.month, last_day, 23, 59, 59)
+        
+        return due_date
+
+    def is_payment_overdue(self, current_date: Optional[datetime] = None) -> bool:
+        """Check if payment is overdue.
+        A payment is overdue if current date is past the due date and amount is outstanding."""
+        if self.financial.outstanding_amount <= 0:
+            return False
+        
+        if self.financial.next_payment_due_date is None:
+            return False
+        
+        if current_date is None:
+            current_date = datetime.now()
+        
+        return current_date > self.financial.next_payment_due_date
 
     def update_financial_factors(self, **kwargs):
         """Update financial discipline factors"""

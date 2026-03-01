@@ -1,0 +1,607 @@
+[2026-03-01 00:00] [INFO] 
+================================================================================
+[2026-03-01 00:00] [INFO]   SKYTRAVEL AGENCY - 60 DAY SIMULATION
+[2026-03-01 00:00] [INFO] ================================================================================
+
+[2026-03-01 00:00] [INFO] Start Date: 2026-03-01
+[2026-03-01 00:00] [INFO] Scenario: Track agency trust evolution, behavioral learning, and anomaly detection
+[2026-03-01 00:00] [INFO] 
+================================================================================
+[2026-03-01 00:00] [INFO]   PHASE 1: ONBOARDING & LEARNING (Days 1-30, BASELINE Mode)
+[2026-03-01 00:00] [INFO] ================================================================================
+
+[2026-03-01 00:00] [INFO] Goal: Establish baseline trust, build transaction history, learn patterns
+[2026-03-01 00:00] [INFO] 
+================================================================================
+[2026-03-01 00:00] [INFO]   STEP 1: AGENCY CREATION
+[2026-03-01 00:00] [INFO] ================================================================================
+
+[2026-03-01 00:00] [INFO] Creating agency: SKYTRAVEL_001
+[2026-03-01 00:00] [INFO] [OK] Agency created successfully
+[2026-03-01 00:00] [INFO]   Initial Trust Score: 41.54/100
+[2026-03-01 00:00] [INFO]   Risk Level: LOW
+[2026-03-01 00:00] [INFO]   Account Age: 0 days
+[2026-03-01 00:00] [INFO]   Evaluation Mode: BASELINE (Month 1, strict thresholds)
+[2026-03-01 00:00] [INFO]   Monthly Credit Limit: $-8,462.50
+[2026-03-01 00:00] [INFO]   Outstanding: $0.00
+[2026-03-01 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-01 00:00] [INFO] [TIME] Advanced 0 days to 2026-03-01
+[2026-03-01 00:00] [INFO] 
+================================================================================
+[2026-03-01 00:00] [INFO]   BOOKING #22: INITIAL BOOKING
+[2026-03-01 00:00] [INFO] ================================================================================
+
+[2026-03-01 00:00] [INFO] Booking ID: BK_0022
+[2026-03-01 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-01 00:00] [INFO] Amount: $3,500.00
+[2026-03-01 00:00] [INFO] Location: US-CA
+[2026-03-01 00:00] [INFO] Time: 10:00
+[2026-03-01 00:00] [INFO] Account Age: 0 days
+[2026-03-01 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-01 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-01 00:00] [INFO]   Risk Score: 39.32/100
+[2026-03-01 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-01 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-01 00:00] [INFO] 
+[REASONING]
+[2026-03-01 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-01 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-01 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-01 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-01 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-01 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-01 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-01 00:00] [INFO]   Trust Score: 41.54/100
+[2026-03-01 00:00] [INFO]   Credit Limit: $-8,462.50
+[2026-03-01 00:00] [INFO]   Outstanding: $0.00
+[2026-03-01 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-01 00:00] [INFO]   Expected Decision: APPROVE_WITH_MONITORING FAIL
+[2026-03-02 00:00] [INFO] [TIME] Advanced 1 days to 2026-03-02
+[2026-03-02 00:00] [INFO] 
+================================================================================
+[2026-03-02 00:00] [INFO]   PAYMENT
+[2026-03-02 00:00] [INFO] ================================================================================
+
+[2026-03-02 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-02 00:00] [INFO] Payment Amount: $2,000.00
+[2026-03-02 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-03-02 00:00] [INFO]   Trust Score: 43.62/100
+[2026-03-02 00:00] [INFO]   Outstanding: $0.00
+[2026-03-02 00:00] [INFO]   Financial Discipline: 30.0%
+[2026-03-05 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-05
+[2026-03-05 00:00] [INFO] 
+================================================================================
+[2026-03-05 00:00] [INFO]   BOOKING #60
+[2026-03-05 00:00] [INFO] ================================================================================
+
+[2026-03-05 00:00] [INFO] Booking ID: BK_0060
+[2026-03-05 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-05 00:00] [INFO] Amount: $3,200.00
+[2026-03-05 00:00] [INFO] Location: US-CA
+[2026-03-05 00:00] [INFO] Time: 11:00
+[2026-03-05 00:00] [INFO] Account Age: 0 days
+[2026-03-05 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-05 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-05 00:00] [INFO]   Risk Score: 38.81/100
+[2026-03-05 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-05 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-05 00:00] [INFO] 
+[REASONING]
+[2026-03-05 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-05 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-05 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-05 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-05 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-05 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-05 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-05 00:00] [INFO]   Trust Score: 43.62/100
+[2026-03-05 00:00] [INFO]   Credit Limit: $-6,382.50
+[2026-03-05 00:00] [INFO]   Outstanding: $0.00
+[2026-03-05 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-08 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-08
+[2026-03-08 00:00] [INFO] 
+================================================================================
+[2026-03-08 00:00] [INFO]   PAYMENT
+[2026-03-08 00:00] [INFO] ================================================================================
+
+[2026-03-08 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-08 00:00] [INFO] Payment Amount: $2,000.00
+[2026-03-08 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-03-08 00:00] [INFO]   Trust Score: 45.70/100
+[2026-03-08 00:00] [INFO]   Outstanding: $0.00
+[2026-03-08 00:00] [INFO]   Financial Discipline: 40.0%
+[2026-03-12 00:00] [INFO] [TIME] Advanced 4 days to 2026-03-12
+[2026-03-12 00:00] [INFO] 
+================================================================================
+[2026-03-12 00:00] [INFO]   BOOKING #97
+[2026-03-12 00:00] [INFO] ================================================================================
+
+[2026-03-12 00:00] [INFO] Booking ID: BK_0097
+[2026-03-12 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-12 00:00] [INFO] Amount: $3,800.00
+[2026-03-12 00:00] [INFO] Location: US-NY
+[2026-03-12 00:00] [INFO] Time: 09:00
+[2026-03-12 00:00] [INFO] Account Age: 0 days
+[2026-03-12 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-12 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-12 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-12 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-12 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-12 00:00] [INFO] 
+[REASONING]
+[2026-03-12 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-12 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-12 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-12 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-12 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-12 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-12 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-12 00:00] [INFO]   Trust Score: 45.70/100
+[2026-03-12 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-12 00:00] [INFO]   Outstanding: $0.00
+[2026-03-12 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-15 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-15
+[2026-03-15 00:00] [INFO] 
+================================================================================
+[2026-03-15 00:00] [INFO]   BOOKING #124
+[2026-03-15 00:00] [INFO] ================================================================================
+
+[2026-03-15 00:00] [INFO] Booking ID: BK_0124
+[2026-03-15 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-15 00:00] [INFO] Amount: $3,100.00
+[2026-03-15 00:00] [INFO] Location: US-CA
+[2026-03-15 00:00] [INFO] Time: 10:00
+[2026-03-15 00:00] [INFO] Account Age: 0 days
+[2026-03-15 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-15 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-15 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-15 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-15 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-15 00:00] [INFO] 
+[REASONING]
+[2026-03-15 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-15 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-15 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-15 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-15 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-15 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-15 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-15 00:00] [INFO]   Trust Score: 45.70/100
+[2026-03-15 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-15 00:00] [INFO]   Outstanding: $0.00
+[2026-03-15 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-20 00:00] [INFO] [TIME] Advanced 5 days to 2026-03-20
+[2026-03-20 00:00] [INFO] 
+================================================================================
+[2026-03-20 00:00] [INFO]   BOOKING #151: LEARNING ACTIVATION
+[2026-03-20 00:00] [INFO] ================================================================================
+
+[2026-03-20 00:00] [INFO] Booking ID: BK_0151
+[2026-03-20 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-20 00:00] [INFO] Amount: $3,400.00
+[2026-03-20 00:00] [INFO] Location: US-CA
+[2026-03-20 00:00] [INFO] Time: 10:00
+[2026-03-20 00:00] [INFO] Account Age: 0 days
+[2026-03-20 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-20 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-20 00:00] [INFO]   Risk Score: 38.30/100
+[2026-03-20 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-20 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-20 00:00] [INFO] 
+[REASONING]
+[2026-03-20 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-20 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-20 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-20 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-20 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-20 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-20 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-20 00:00] [INFO]   Trust Score: 45.70/100
+[2026-03-20 00:00] [INFO]   Credit Limit: $-4,302.50
+[2026-03-20 00:00] [INFO]   Outstanding: $0.00
+[2026-03-20 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-20 00:00] [INFO] 
+================================================================================
+[2026-03-20 00:00] [INFO]   KEY MILESTONE: LEARNING ACTIVATED
+[2026-03-20 00:00] [INFO] ================================================================================
+
+[2026-03-20 00:00] [INFO] After 5+ transactions, behavioral anomaly detection is now ACTIVE
+[2026-03-20 00:00] [INFO] Agency behavior profile has been learned and saved to database
+[2026-03-20 00:00] [INFO] Subsequent bookings will be evaluated against learned patterns
+[2026-03-22 00:00] [INFO] [TIME] Advanced 2 days to 2026-03-22
+[2026-03-22 00:00] [INFO] 
+================================================================================
+[2026-03-22 00:00] [INFO]   PAYMENT
+[2026-03-22 00:00] [INFO] ================================================================================
+
+[2026-03-22 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-22 00:00] [INFO] Payment Amount: $3,000.00
+[2026-03-22 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-03-22 00:00] [INFO]   Trust Score: 47.78/100
+[2026-03-22 00:00] [INFO]   Outstanding: $0.00
+[2026-03-22 00:00] [INFO]   Financial Discipline: 50.0%
+[2026-03-25 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-25
+[2026-03-25 00:00] [INFO] 
+================================================================================
+[2026-03-25 00:00] [INFO]   BOOKING #194: PATTERN MATCH
+[2026-03-25 00:00] [INFO] ================================================================================
+
+[2026-03-25 00:00] [INFO] Booking ID: BK_0194
+[2026-03-25 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-25 00:00] [INFO] Amount: $3,550.00
+[2026-03-25 00:00] [INFO] Location: US-CA
+[2026-03-25 00:00] [INFO] Time: 10:00
+[2026-03-25 00:00] [INFO] Account Age: 0 days
+[2026-03-25 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-25 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-25 00:00] [INFO]   Risk Score: 37.79/100
+[2026-03-25 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-25 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-25 00:00] [INFO] 
+[REASONING]
+[2026-03-25 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-25 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-25 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-25 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-25 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-25 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-25 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-25 00:00] [INFO]   Trust Score: 47.78/100
+[2026-03-25 00:00] [INFO]   Credit Limit: $-2,222.50
+[2026-03-25 00:00] [INFO]   Outstanding: $0.00
+[2026-03-25 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-25 00:00] [INFO]   Expected Decision: APPROVE FAIL
+[2026-03-28 00:00] [INFO] [TIME] Advanced 3 days to 2026-03-28
+[2026-03-28 00:00] [INFO] 
+================================================================================
+[2026-03-28 00:00] [INFO]   BOOKING #222: FRAUD TEST - MULTIPLE ANOMALIES
+[2026-03-28 00:00] [INFO] ================================================================================
+
+[2026-03-28 00:00] [INFO] Booking ID: BK_0222
+[2026-03-28 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-28 00:00] [INFO] Amount: $12,000.00
+[2026-03-28 00:00] [INFO] Location: EU-UK
+[2026-03-28 00:00] [INFO] Time: 02:00
+[2026-03-28 00:00] [INFO] Account Age: 0 days
+[2026-03-28 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-28 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-28 00:00] [INFO]   Risk Score: 34.79/100
+[2026-03-28 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-28 00:00] [INFO]   Decision: approve_with_monitoring
+[2026-03-28 00:00] [INFO] 
+[REASONING]
+[2026-03-28 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-28 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-28 00:00] [INFO]   Traditional Risk Signals (2):
+[2026-03-28 00:00] [INFO]     • value_deviation: Unusually high booking: $12,000
+[2026-03-28 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-28 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-03-28 00:00] [INFO]   Flag for post-transaction review
+[2026-03-28 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-28 00:00] [INFO]   Trust Score: 48.11/100
+[2026-03-28 00:00] [INFO]   Credit Limit: $-1,894.37
+[2026-03-28 00:00] [INFO]   Outstanding: $0.00
+[2026-03-28 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-28 00:00] [INFO]   Expected Decision: RESTRICT FAIL
+[2026-03-28 00:00] [INFO] 
+================================================================================
+[2026-03-28 00:00] [INFO]   FRAUD TEST RESULT
+[2026-03-28 00:00] [INFO] ================================================================================
+
+[2026-03-28 00:00] [INFO] [OK] Fraud detection successful!
+[2026-03-28 00:00] [INFO]   Multiple behavioral anomalies detected:
+[2026-03-28 00:00] [INFO]   • Amount deviation: +281% from learned average
+[2026-03-28 00:00] [INFO]   • Geographic anomaly: Outside known regions (US-CA, US-NY)
+[2026-03-28 00:00] [INFO]   • Timing anomaly: 2 AM outside normal booking hours (9-11 AM)
+[2026-03-28 00:00] [INFO]   • Exposure velocity: Would consume >80% of credit limit
+[2026-03-28 00:00] [INFO]   Decision: RESTRICT (Block booking, prevent fraud)
+[2026-03-30 00:00] [INFO] [TIME] Advanced 2 days to 2026-03-30
+[2026-03-30 00:00] [INFO] 
+================================================================================
+[2026-03-30 00:00] [INFO]   PAYMENT
+[2026-03-30 00:00] [INFO] ================================================================================
+
+[2026-03-30 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-30 00:00] [INFO] Payment Amount: $2,000.00
+[2026-03-30 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-03-30 00:00] [INFO]   Trust Score: 50.19/100
+[2026-03-30 00:00] [INFO]   Outstanding: $0.00
+[2026-03-30 00:00] [INFO]   Financial Discipline: 60.0%
+[2026-03-30 00:00] [INFO] 
+================================================================================
+[2026-03-30 00:00] [INFO]   PHASE TRANSITION: BASELINE => PERSONALIZED
+[2026-03-30 00:00] [INFO] ================================================================================
+
+[2026-03-30 00:00] [INFO] Account age reached 30 days
+[2026-03-30 00:00] [INFO] Evaluation mode switches from BASELINE to PERSONALIZED
+[2026-03-30 00:00] [INFO] • Account maturity signal severity reduced from 1.0 to 0.3
+[2026-03-30 00:00] [INFO] • Learned thresholds now active
+[2026-03-30 00:00] [INFO] • Risk evaluation becomes more precise and less strict
+[2026-03-30 00:00] [INFO] 
+================================================================================
+[2026-03-30 00:00] [INFO]   PHASE 2: ADAPTATION & PERSONALIZATION (Days 31-60, PERSONALIZED Mode)
+[2026-03-30 00:00] [INFO] ================================================================================
+
+[2026-03-30 00:00] [INFO] Goal: Demonstrate behavioral learning, risk reduction through consistency
+[2026-03-31 00:00] [INFO] [TIME] Advanced 1 days to 2026-03-31
+[2026-03-31 00:00] [INFO] 
+================================================================================
+[2026-03-31 00:00] [INFO]   BOOKING #283: FIRST PERSONALIZED MODE BOOKING
+[2026-03-31 00:00] [INFO] ================================================================================
+
+[2026-03-31 00:00] [INFO] Booking ID: BK_0283
+[2026-03-31 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-03-31 00:00] [INFO] Amount: $3,450.00
+[2026-03-31 00:00] [INFO] Location: US-CA
+[2026-03-31 00:00] [INFO] Time: 10:00
+[2026-03-31 00:00] [INFO] Account Age: 0 days
+[2026-03-31 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-03-31 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-03-31 00:00] [INFO]   Risk Score: 37.20/100
+[2026-03-31 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-03-31 00:00] [INFO]   Decision: reduce_exposure
+[2026-03-31 00:00] [INFO] 
+[REASONING]
+[2026-03-31 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-03-31 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-03-31 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-03-31 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-03-31 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-03-31 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-03-31 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-03-31 00:00] [INFO]   Trust Score: 50.19/100
+[2026-03-31 00:00] [INFO]   Credit Limit: $185.63
+[2026-03-31 00:00] [INFO]   Outstanding: $0.00
+[2026-03-31 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-03-31 00:00] [INFO]   Expected Decision: APPROVE FAIL
+[2026-03-31 00:00] [INFO] 
+================================================================================
+[2026-03-31 00:00] [INFO]   MODE SWITCH IMPACT
+[2026-03-31 00:00] [INFO] ================================================================================
+
+[2026-03-31 00:00] [INFO] Notice the risk score dropped from ~35 in BASELINE mode to ~5-10 in PERSONALIZED mode
+[2026-03-31 00:00] [INFO] This demonstrates the power of behavioral learning:
+[2026-03-31 00:00] [INFO] • Same booking, different evaluation context
+[2026-03-31 00:00] [INFO] • Machine learning reduced false positives
+[2026-03-31 00:00] [INFO] • More accurate risk assessment based on agency's actual patterns
+[2026-04-04 00:00] [INFO] [TIME] Advanced 4 days to 2026-04-04
+[2026-04-04 00:00] [INFO] 
+================================================================================
+[2026-04-04 00:00] [INFO]   BOOKING #319
+[2026-04-04 00:00] [INFO] ================================================================================
+
+[2026-04-04 00:00] [INFO] Booking ID: BK_0319
+[2026-04-04 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-04 00:00] [INFO] Amount: $3,200.00
+[2026-04-04 00:00] [INFO] Location: US-CA
+[2026-04-04 00:00] [INFO] Time: 11:00
+[2026-04-04 00:00] [INFO] Account Age: 0 days
+[2026-04-04 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-04-04 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-04-04 00:00] [INFO]   Risk Score: 37.20/100
+[2026-04-04 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-04-04 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-04 00:00] [INFO] 
+[REASONING]
+[2026-04-04 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-04-04 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-04 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-04-04 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-04-04 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-04-04 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-04 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-04-04 00:00] [INFO]   Trust Score: 50.19/100
+[2026-04-04 00:00] [INFO]   Credit Limit: $185.63
+[2026-04-04 00:00] [INFO]   Outstanding: $0.00
+[2026-04-04 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-04-07 00:00] [INFO] [TIME] Advanced 3 days to 2026-04-07
+[2026-04-07 00:00] [INFO] 
+================================================================================
+[2026-04-07 00:00] [INFO]   BOOKING #346: PATTERN EXTENSION (HIGHER AMOUNT)
+[2026-04-07 00:00] [INFO] ================================================================================
+
+[2026-04-07 00:00] [INFO] Booking ID: BK_0346
+[2026-04-07 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-07 00:00] [INFO] Amount: $15,000.00
+[2026-04-07 00:00] [INFO] Location: US-NY
+[2026-04-07 00:00] [INFO] Time: 10:00
+[2026-04-07 00:00] [INFO] Account Age: 0 days
+[2026-04-07 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-04-07 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-04-07 00:00] [INFO]   Risk Score: 37.20/100
+[2026-04-07 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-04-07 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-07 00:00] [INFO] 
+[REASONING]
+[2026-04-07 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-04-07 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-07 00:00] [INFO]   Traditional Risk Signals (2):
+[2026-04-07 00:00] [INFO]     • value_deviation: Unusually high booking: $15,000
+[2026-04-07 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-04-07 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-04-07 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-07 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-04-07 00:00] [INFO]   Trust Score: 50.19/100
+[2026-04-07 00:00] [INFO]   Credit Limit: $185.63
+[2026-04-07 00:00] [INFO]   Outstanding: $0.00
+[2026-04-07 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-04-07 00:00] [INFO]   Expected Decision: APPROVE_WITH_MONITORING FAIL
+[2026-04-11 00:00] [INFO] [TIME] Advanced 4 days to 2026-04-11
+[2026-04-11 00:00] [INFO] 
+================================================================================
+[2026-04-11 00:00] [INFO]   PAYMENT
+[2026-04-11 00:00] [INFO] ================================================================================
+
+[2026-04-11 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-11 00:00] [INFO] Payment Amount: $5,000.00
+[2026-04-11 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-04-11 00:00] [INFO]   Trust Score: 52.27/100
+[2026-04-11 00:00] [INFO]   Outstanding: $0.00
+[2026-04-11 00:00] [INFO]   Financial Discipline: 70.0%
+[2026-04-11 00:00] [INFO] 
+================================================================================
+[2026-04-11 00:00] [INFO]   CREDIT LIMIT MILESTONE
+[2026-04-11 00:00] [INFO] ================================================================================
+
+[2026-04-11 00:00] [INFO] Credit limit increased to $2,265.62
+[2026-04-11 00:00] [INFO] Trust score improved to 52.27/100
+[2026-04-11 00:00] [INFO] Agency's consistent on-time payments and normal activity rewarded with increased credit
+[2026-04-14 00:00] [INFO] [TIME] Advanced 3 days to 2026-04-14
+[2026-04-14 00:00] [INFO] 
+================================================================================
+[2026-04-14 00:00] [INFO]   BOOKING #391
+[2026-04-14 00:00] [INFO] ================================================================================
+
+[2026-04-14 00:00] [INFO] Booking ID: BK_0391
+[2026-04-14 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-14 00:00] [INFO] Amount: $4,200.00
+[2026-04-14 00:00] [INFO] Location: US-CA
+[2026-04-14 00:00] [INFO] Time: 09:00
+[2026-04-14 00:00] [INFO] Account Age: 0 days
+[2026-04-14 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-04-14 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-04-14 00:00] [INFO]   Risk Score: 36.69/100
+[2026-04-14 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-04-14 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-14 00:00] [INFO] 
+[REASONING]
+[2026-04-14 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-04-14 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-14 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-04-14 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-04-14 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-04-14 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-14 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-04-14 00:00] [INFO]   Trust Score: 52.27/100
+[2026-04-14 00:00] [INFO]   Credit Limit: $2,265.62
+[2026-04-14 00:00] [INFO]   Outstanding: $0.00
+[2026-04-14 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-04-19 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-19
+[2026-04-19 00:00] [INFO] 
+================================================================================
+[2026-04-19 00:00] [INFO]   BOOKING #418
+[2026-04-19 00:00] [INFO] ================================================================================
+
+[2026-04-19 00:00] [INFO] Booking ID: BK_0418
+[2026-04-19 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-19 00:00] [INFO] Amount: $9,000.00
+[2026-04-19 00:00] [INFO] Location: US-CA
+[2026-04-19 00:00] [INFO] Time: 10:00
+[2026-04-19 00:00] [INFO] Account Age: 0 days
+[2026-04-19 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-04-19 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-04-19 00:00] [INFO]   Risk Score: 30.69/100
+[2026-04-19 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-04-19 00:00] [INFO]   Decision: approve_with_monitoring
+[2026-04-19 00:00] [INFO] 
+[REASONING]
+[2026-04-19 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-04-19 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-19 00:00] [INFO]   Traditional Risk Signals (2):
+[2026-04-19 00:00] [INFO]     • value_deviation: Unusually high booking: $9,000
+[2026-04-19 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-04-19 00:00] [INFO]   DECISION: Approve with enhanced monitoring
+[2026-04-19 00:00] [INFO]   Flag for post-transaction review
+[2026-04-19 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-04-19 00:00] [INFO]   Trust Score: 52.59/100
+[2026-04-19 00:00] [INFO]   Credit Limit: $2,593.75
+[2026-04-19 00:00] [INFO]   Outstanding: $0.00
+[2026-04-19 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-04-24 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-24
+[2026-04-24 00:00] [INFO] 
+================================================================================
+[2026-04-24 00:00] [INFO]   PAYMENT
+[2026-04-24 00:00] [INFO] ================================================================================
+
+[2026-04-24 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-24 00:00] [INFO] Payment Amount: $8,000.00
+[2026-04-24 00:00] [INFO] 
+[POST-PAYMENT STATUS]
+[2026-04-24 00:00] [INFO]   Trust Score: 54.67/100
+[2026-04-24 00:00] [INFO]   Outstanding: $0.00
+[2026-04-24 00:00] [INFO]   Financial Discipline: 80.0%
+[2026-04-29 00:00] [INFO] [TIME] Advanced 5 days to 2026-04-29
+[2026-04-29 00:00] [INFO] 
+================================================================================
+[2026-04-29 00:00] [INFO]   BOOKING #456: FINAL BOOKING - 60 DAY MARK
+[2026-04-29 00:00] [INFO] ================================================================================
+
+[2026-04-29 00:00] [INFO] Booking ID: BK_0456
+[2026-04-29 00:00] [INFO] Agency: SKYTRAVEL_001
+[2026-04-29 00:00] [INFO] Amount: $4,500.00
+[2026-04-29 00:00] [INFO] Location: US-CA
+[2026-04-29 00:00] [INFO] Time: 10:00
+[2026-04-29 00:00] [INFO] Account Age: 0 days
+[2026-04-29 00:00] [INFO] Evaluation Mode: BASELINE
+[2026-04-29 00:00] [INFO] 
+[RISK EVALUATION]
+[2026-04-29 00:00] [INFO]   Risk Score: 36.10/100
+[2026-04-29 00:00] [INFO]   Base Anomaly Score: 0.00/100
+[2026-04-29 00:00] [INFO]   Decision: reduce_exposure
+[2026-04-29 00:00] [INFO] 
+[REASONING]
+[2026-04-29 00:00] [INFO]   Evaluation Mode: BASELINE - Using generic thresholds (Month 1)
+[2026-04-29 00:00] [INFO]   [WARNING] Agency has low trust profile
+[2026-04-29 00:00] [INFO]   Traditional Risk Signals (1):
+[2026-04-29 00:00] [INFO]     • account_maturity: New account (0 days old)
+[2026-04-29 00:00] [INFO]   DECISION: Reduce exposure on this booking
+[2026-04-29 00:00] [INFO]   Cap transaction at 50% of normal limit
+[2026-04-29 00:00] [INFO] 
+[POST-TRANSACTION STATUS]
+[2026-04-29 00:00] [INFO]   Trust Score: 54.67/100
+[2026-04-29 00:00] [INFO]   Credit Limit: $4,673.75
+[2026-04-29 00:00] [INFO]   Outstanding: $0.00
+[2026-04-29 00:00] [INFO]   Exposure Ratio: 0.0%
+[2026-04-29 00:00] [INFO] 
+================================================================================
+[2026-04-29 00:00] [INFO]   SIMULATION COMPLETE: 60-DAY SUMMARY
+[2026-04-29 00:00] [INFO] ================================================================================
+
+[2026-04-29 00:00] [INFO] 
+Final Agency Status:
+[2026-04-29 00:00] [INFO]   Trust Score: 54.67/100 (vs 55.00 at start)
+[2026-04-29 00:00] [INFO]   Credit Limit: $4,673.75
+[2026-04-29 00:00] [INFO]   Outstanding: $0.00
+[2026-04-29 00:00] [INFO]   Risk Level: LOW
+[2026-04-29 00:00] [INFO] 
+Trust Dimension Scores:
+[2026-04-29 00:00] [INFO]   Financial Discipline: 80.0% on-time ratio
+[2026-04-29 00:00] [INFO]   Behavioral Stability: 0.50 bookings
+[2026-04-29 00:00] [INFO]   Operational Legitimacy: 0 days verified
+[2026-04-29 00:00] [INFO] 
+Key Achievements:
+[2026-04-29 00:00] [INFO]   [+] Trust score increased -0.33 points (+-0.6%)
+[2026-04-29 00:00] [INFO]   [+] Credit limit grew from $5,000 to $4,673.75 (2x increase)
+[2026-04-29 00:00] [INFO]   [+] 13 total transactions processed
+[2026-04-29 00:00] [INFO]   [+] Behavioral patterns learned and fraud detected
+[2026-04-29 00:00] [INFO]   [+] Switched from BASELINE to PERSONALIZED evaluation
+[2026-04-29 00:00] [INFO]   [+] Behavioral anomaly detection prevented fraudulent booking

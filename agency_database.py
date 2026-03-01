@@ -40,6 +40,8 @@ class AgencyDatabase:
                 outstanding_amount REAL,
                 default_history INTEGER,
                 chargeback_ratio REAL,
+                next_payment_due_date TEXT,
+                missed_payment_count INTEGER,
                 FOREIGN KEY (agency_id) REFERENCES agencies(agency_id)
             )
         """)
@@ -167,15 +169,17 @@ class AgencyDatabase:
             # Save financial factors
             cursor.execute("""
                 INSERT OR REPLACE INTO financial_factors
-                (agency_id, on_time_payment_ratio, credit_utilization_ratio, outstanding_amount, default_history, chargeback_ratio)
-                VALUES (?, ?, ?, ?, ?, ?)
+                (agency_id, on_time_payment_ratio, credit_utilization_ratio, outstanding_amount, default_history, chargeback_ratio, next_payment_due_date, missed_payment_count)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 model.agency_id,
                 model.financial.on_time_payment_ratio,
                 model.financial.credit_utilization_ratio,
                 model.financial.outstanding_amount,
                 model.financial.default_history,
-                model.financial.chargeback_ratio
+                model.financial.chargeback_ratio,
+                model.financial.next_payment_due_date.isoformat() if model.financial.next_payment_due_date else None,
+                model.financial.missed_payment_count
             ))
 
             # Save behavioral factors
@@ -239,6 +243,11 @@ class AgencyDatabase:
                 model.financial.outstanding_amount = fin_row[3]
                 model.financial.default_history = fin_row[4]
                 model.financial.chargeback_ratio = fin_row[5]
+                if len(fin_row) > 6 and fin_row[6]:
+                    from datetime import datetime
+                    model.financial.next_payment_due_date = datetime.fromisoformat(fin_row[6])
+                if len(fin_row) > 7:
+                    model.financial.missed_payment_count = fin_row[7]
 
             # Get behavioral factors
             cursor.execute("SELECT * FROM behavioral_factors WHERE agency_id = ?", (agency_id,))

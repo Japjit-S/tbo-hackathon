@@ -4,7 +4,8 @@ Transaction Processor - Orchestrates end-to-end transaction flow
 """
 
 from typing import Optional, Dict, Any, List
-from datetime import datetime
+from datetime import datetime, timedelta
+from calendar import monthrange
 import uuid
 from trust_manager import TrustManager
 from booking_risk_evaluator import BookingRiskEvaluator, BookingRequest, BookingRiskAssessment
@@ -41,11 +42,19 @@ class TransactionProcessor:
 
         # STEP 2: Execute transaction (if approved)
         transaction_id = None
+        due_date = None
         if assessment.decision in ['approve', 'approve_with_monitoring']:
             transaction_id = f"TXN_{booking_id}_{datetime.now().timestamp()}"
             self.trust_mgr.db.save_transaction(
                 transaction_id, agency_id, 'BOOKING', amount, 'APPROVED', notes
             )
+            
+            # Set payment due date to end of current month
+            agency = self.trust_mgr.get_agency(agency_id)
+            if agency:
+                due_date = agency.get_next_payment_due_date(datetime.now())
+                agency.financial.next_payment_due_date = due_date
+                self.trust_mgr.db.save_agency(agency)
 
         # STEP 3: Update trust model
         if assessment.decision == 'approve':
@@ -72,6 +81,7 @@ class TransactionProcessor:
             'evaluation_mode': assessment.evaluation_mode,
             'monthly_credit_limit': assessment.monthly_credit_limit,
             'exposure_ratio': assessment.exposure_ratio,
+            'payment_due_date': due_date.isoformat() if due_date else None,
             'behavioral_anomalies': [(a.anomaly_type, a.severity, a.description) for a in assessment.behavioral_anomalies],
             'credit_increase_pct': credit_increase,
             'timestamp': datetime.now().isoformat(),
@@ -85,7 +95,7 @@ class TransactionProcessor:
     def process_payment(self, agency_id: str, amount: float, notes: str = "") -> Dict[str, Any]:
         """
         Process payment: Reduce outstanding → Update trust
-        Payments improve financial discipline
+        Payments improve financial discipline and set next month's due date
         """
         transaction_id = f"TXN_PAYMENT_{agency_id}_{datetime.now().timestamp()}"
         
@@ -96,6 +106,7 @@ class TransactionProcessor:
 
         old_trust = agency.get_composite_trust_score()
         old_outstanding = agency.financial.outstanding_amount or 0.0
+        was_overdue = agency.is_payment_overdue(datetime.now())
 
         # Reduce outstanding amount
         new_outstanding = max(0, old_outstanding - amount)
@@ -107,6 +118,17 @@ class TransactionProcessor:
             agency.financial.on_time_payment_ratio = min(100, agency.financial.on_time_payment_ratio + 5)
             # Reduce utilization
             agency.financial.credit_utilization_ratio = max(0, agency.financial.credit_utilization_ratio - 2)
+            
+            # If payment was made on time (before due date), boost the score further
+            if not was_overdue:
+                agency.financial.on_time_payment_ratio = min(100, agency.financial.on_time_payment_ratio + 5)
+        
+        # Set next payment due date to end of next month
+        current_date = datetime.now()
+        next_month = current_date.replace(day=28) + timedelta(days=4)  # First day of next month
+        next_month = next_month - timedelta(days=next_month.day)  # Back to first day
+        _, last_day = monthrange(next_month.year, next_month.month)
+        agency.financial.next_payment_due_date = datetime(next_month.year, next_month.month, last_day, 23, 59, 59)
 
         # Persist changes
         self.trust_mgr.db.save_agency(agency)
@@ -126,6 +148,8 @@ class TransactionProcessor:
             'old_trust': old_trust,
             'new_trust': new_trust,
             'trust_improvement': trust_improvement,
+            'was_overdue': was_overdue,
+            'next_payment_due_date': agency.financial.next_payment_due_date.isoformat() if agency.financial.next_payment_due_date else None,
             'timestamp': datetime.now().isoformat(),
             'notes': notes
         }

@@ -339,7 +339,7 @@ class BookingRiskEvaluator:
         elif trust_score >= 60:
             trust_statement = "⚠ Agency has moderate trust profile"
         else:
-            trust_statement = "🚨 Agency has low trust profile"
+            trust_statement = "[WARNING] Agency has low trust profile"
 
         signal_text = ""
         if signals:
